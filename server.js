@@ -17,9 +17,11 @@ const seatmodelE = require('./seatmodelE')
 
 
 const app = express();
-mongoose.connect('mongodb+srv://tharunkarnekota:tharunkarnekota@cluster0.ci7wy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then(
+mongoose.connect('mongodb+srv://tharunkarnekota007:tharunkarnekota007@cluster0.ci7wy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then(
     ()=> console.log('Db connected..') 
 )
+
+//Note : that mongoDB url is fake use your own url of mongoDB
 
 app.use(express.json());
 app.use(cors({origin:"*"}));
